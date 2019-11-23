@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/tengai-coding-exercise/precache-manifest.12a4dbb66f4f24ad20aec7ed564963b5.js"
+  "/tengai-coding-exercise/precache-manifest.540e42ac4d9a230fe2322abd7d15d9ad.js"
 );
 
 self.addEventListener('message', (event) => {
