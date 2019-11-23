@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.js": "/tengai-coding-exercise/static/js/main.2d0a2396.chunk.js",
-    "main.js.map": "/tengai-coding-exercise/static/js/main.2d0a2396.chunk.js.map",
+    "main.js": "/tengai-coding-exercise/static/js/main.647a10ef.chunk.js",
+    "main.js.map": "/tengai-coding-exercise/static/js/main.647a10ef.chunk.js.map",
     "runtime-main.js": "/tengai-coding-exercise/static/js/runtime-main.415f2a04.js",
     "runtime-main.js.map": "/tengai-coding-exercise/static/js/runtime-main.415f2a04.js.map",
     "static/js/2.dd6d8248.chunk.js": "/tengai-coding-exercise/static/js/2.dd6d8248.chunk.js",
     "static/js/2.dd6d8248.chunk.js.map": "/tengai-coding-exercise/static/js/2.dd6d8248.chunk.js.map",
     "index.html": "/tengai-coding-exercise/index.html",
-    "precache-manifest.fc9a225cfd0de1104bc0d651dd3470be.js": "/tengai-coding-exercise/precache-manifest.fc9a225cfd0de1104bc0d651dd3470be.js",
+    "precache-manifest.12a4dbb66f4f24ad20aec7ed564963b5.js": "/tengai-coding-exercise/precache-manifest.12a4dbb66f4f24ad20aec7ed564963b5.js",
     "service-worker.js": "/tengai-coding-exercise/service-worker.js"
   },
   "entrypoints": [
     "static/js/runtime-main.415f2a04.js",
     "static/js/2.dd6d8248.chunk.js",
-    "static/js/main.2d0a2396.chunk.js"
+    "static/js/main.647a10ef.chunk.js"
   ]
 }
