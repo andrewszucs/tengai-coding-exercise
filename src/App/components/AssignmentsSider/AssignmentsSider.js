@@ -32,7 +32,7 @@ const useStyles = makeStyles({
 
 function AssignmentsSider(props) {
   const classes = useStyles();
-  const { departments: allDepartments } = useAppState();
+  const { departments: allDepartments, basePath } = useAppState();
   const departments = allDepartments.filter(
     ({ id }) => id !== ASSIGNED_TO_ME && id !== FAVOURITES
   );
@@ -43,7 +43,7 @@ function AssignmentsSider(props) {
     <div className={classes.root}>
       <Button
         className={classes.button}
-        to="/assignments/new"
+        to={`${basePath}/assignments/new`}
         component={Link}
         variant="outlined"
         startIcon={<PostAdd />}

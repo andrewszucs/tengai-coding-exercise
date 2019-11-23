@@ -3,12 +3,12 @@ import React from "react";
 import { useAppState } from "../../hooks";
 
 function AssignmentsListPage(props) {
-  const { assignments } = useAppState();
+  const { assignments, basePath } = useAppState();
   return (
     <ul>
       {assignments.map(({ name, id }) => (
         <li key={id}>
-          <Link to={`/assignments/${id}`}>{name}</Link>
+          <Link to={`${basePath}/assignments/${id}`}>{name}</Link>
         </li>
       ))}
     </ul>

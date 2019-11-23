@@ -74,7 +74,7 @@ function ActionsMenuItem({ Icon, title }) {
 
 function AssignmentDetailsPage(props) {
   const classes = useStyles();
-  const { assignments } = useAppState();
+  const { assignments, basePath } = useAppState();
   const selectedAssignment = assignments.find(({ id }) => id === props.id);
 
   if (!selectedAssignment) {
@@ -86,7 +86,7 @@ function AssignmentDetailsPage(props) {
       <div className={`${classes.stretch} ${classes.detailView}`}>
         <div className={`${classes.breadCrumbsRow}`}>
           <Button
-            to="/assignments"
+            to={`${basePath}/assignments`}
             component={Link}
             variant="outlined"
             className={classes.backButton}

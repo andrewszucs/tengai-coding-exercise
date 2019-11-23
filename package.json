@@ -2,7 +2,7 @@
   "name": "tengai-coding-exercise",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://andrewszucs.github.io/tengai-coding-exercise",
+  "homepage": "https://andrasszucs.me/tengai-coding-exercise",
   "dependencies": {
     "@material-ui/core": "^4.7.0",
     "@material-ui/icons": "^4.5.1",
@@ -12,7 +12,7 @@
     "react-scripts": "3.2.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "PUBLIC_URL=/tengai-coding-exercise react-scripts start",
     "build": "react-scripts build",
     "predeploy": "yarn build",
     "deploy": "gh-pages -d build",

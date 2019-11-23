@@ -35,7 +35,7 @@ function NavLinkTab(props) {
           <Tab
             classes={{ selected: classes.selectedTab }}
             selected={
-              props.to !== "/"
+              props.to !== `${props.basePath}/`
                 ? location.pathname.includes(props.to)
                 : location.pathname === props.to
             }
@@ -49,7 +49,7 @@ function NavLinkTab(props) {
 }
 
 function Header() {
-  const { account } = useAppState();
+  const { account, basePath } = useAppState();
   const classes = useStyles();
 
   return (
@@ -59,9 +59,17 @@ function Header() {
       </Toolbar>
 
       <div className={`${classes.flex} ${classes.root}`}>
-        <NavLinkTab label="Dashboard" to="/" />
-        <NavLinkTab label="Assignments" to="/assignments" />
-        <NavLinkTab label="Candidates" to="/candidates" />
+        <NavLinkTab label="Dashboard" to={`${basePath}/`} basePath={basePath} />
+        <NavLinkTab
+          label="Assignments"
+          to={`${basePath}/assignments`}
+          basePath={basePath}
+        />
+        <NavLinkTab
+          label="Candidates"
+          to={`${basePath}/candidates`}
+          basePath={basePath}
+        />
       </div>
 
       {account && (

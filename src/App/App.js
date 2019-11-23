@@ -113,6 +113,8 @@ function App() {
     value: "MarketingDepId"
   });
 
+  const basePath = process.env.PUBLIC_URL;
+
   return (
     <AppStateContext.Provider
       value={{
@@ -123,10 +125,11 @@ function App() {
         departments,
         setDepartments,
         assignmentFilter,
-        setAssignmentFilter
+        setAssignmentFilter,
+        basePath
       }}
     >
-      <Router>
+      <Router basepath={basePath}>
         <Layout path="/">
           <DashboardPage path="/" />
           <AssignmentsPage path="assignments">
